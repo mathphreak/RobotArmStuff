@@ -60,6 +60,7 @@ containing a value of this type.
     public static final class id {
         public static final int clawNonZRotationView1=0x7f070004;
         public static final int clawZRotationView1=0x7f070003;
+        public static final int seekBar1=0x7f070005;
         public static final int toggleButton1=0x7f070001;
         public static final int xYSeekBarView1=0x7f070000;
         public static final int zSeekBarView1=0x7f070002;

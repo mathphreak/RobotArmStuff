@@ -17,10 +17,10 @@ public class ImageBasedXYControlView extends View {
 	private Drawable robotArmField = getResources().getDrawable(R.drawable.field);
 	private final int FIELD_PIXELS_PER_CM = 10;
 	private static final String DEBUG_TAG = "XYPos";
-	private int scaleX = 1;
-	private int scaleY = 1;
-	private int offsetX = 0;
-	private int offsetY = 0;
+//	private int scaleX = 1;
+//	private int scaleY = 1;
+//	private int offsetX = 0;
+//	private int offsetY = 0;
 	private GestureDetectorCompat detector;
 
 	public ImageBasedXYControlView(Context context) {
@@ -84,7 +84,7 @@ public class ImageBasedXYControlView extends View {
 	}
 	
 	private class GestureListener extends GestureDetector.SimpleOnGestureListener {
-		private static final String DEBUG_TAG = "XYPosGestures";
+//		private static final String DEBUG_TAG = "XYPosGestures";
 
 		@Override
 		public boolean onDoubleTap(MotionEvent e) {

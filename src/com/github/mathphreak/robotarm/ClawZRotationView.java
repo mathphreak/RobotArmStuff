@@ -16,7 +16,7 @@ public class ClawZRotationView extends View {
 	private float startAngle;
 	private Paint clawStandinColor = new Paint(Paint.ANTI_ALIAS_FLAG);
 	@SuppressWarnings("unused")
-	private final String TAG = "XYBarSeekView";
+	private final String TAG = "ClawZRotationView";
 
 	public ClawZRotationView(Context context) {
 		super(context);
@@ -49,9 +49,9 @@ public class ClawZRotationView extends View {
 		float halfWidth = width / 2F;
 		float halfHeight = height / 2F;
 		float quarterWidth = width / 4F;
-		double startRad = startAngle * 180 / Math.PI;
-		float cos = 1 + (float) Math.cos(startRad);
-		float sin = 1 + (float) Math.sin(startRad);
+//		double startRad = startAngle * 180 / Math.PI;
+//		float cos = 1 + (float) Math.cos(startRad);
+//		float sin = 1 + (float) Math.sin(startRad);
 
 		canvas.save();
 		canvas.rotate(currAngle, halfWidth, halfHeight);
@@ -70,7 +70,7 @@ public class ClawZRotationView extends View {
 		super.onTouchEvent(event);
 		switch (event.getActionMasked()) {
 		case MotionEvent.ACTION_DOWN:
-			startAngle = (float) ((180 / Math.PI) * Math.atan2(event.getY(), event.getX()));
+			startAngle = (float) ((180 / Math.PI) * Math.atan2(event.getY(), event.getX())) - currAngle;
 			currAngle = 0;
 			this.invalidate();
 			return true;

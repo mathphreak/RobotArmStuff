@@ -10,9 +10,9 @@ public class RobotControlActivity extends Activity {
 	 * [x]          x position          [ ]
 	 * [x]          y position          [ ]
 	 * [x]      z position (height)     [ ]
-	 * [?]  claw rotation around z-axis [ ] // we're pretending the GUI control works
-	 * [ ] claw angle not around z-axis [ ]
-	 * [ ]         claw openness        [ ]
+	 * [?]  claw rotation around z-axis [ ] // GUI location = sketchy, and also...
+	 * [?] claw angle not around z-axis [ ] // implementation = Math.pow(sketchy, 2)
+	 * [x]         claw openness        [ ] // <-- using a stock slider...
 	 * [x]    automatic/manual control  [ ]
 	 */
 
