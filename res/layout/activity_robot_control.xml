@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RobotControlActivity" >
+
+    <com.github.mathphreak.robotarm.XYSeekBarView
+        android:id="@+id/xYSeekBarView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textOff="@string/automatic_button_text"
+        android:textOn="@string/manual_button_text" />
+
+    <com.github.mathphreak.robotarm.ZSeekBarView
+        android:id="@+id/zSeekBarView1"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_alignParentBottom="true" />
+
+    <com.github.mathphreak.robotarm.ClawZRotationView
+        android:id="@+id/clawZRotationView1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp" />
+
+    <com.github.mathphreak.robotarm.ClawNonZRotationView
+        android:id="@+id/clawNonZRotationView1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/clawZRotationView1"
+        android:padding="4dp" />
+
+</RelativeLayout>
